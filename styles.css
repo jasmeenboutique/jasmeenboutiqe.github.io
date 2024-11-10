@@ -1,0 +1,82 @@
+table {
+    margin: 20px auto;
+    border: 1px solid #0088fa;  /* Royal Blue border */
+    border-collapse: collapse;
+    padding-top: 100px;
+    box-shadow:
+        0 4px 10px rgba(0, 136, 250, 0.1),    /* Outer shadow */
+        inset 0 0 15px rgba(0, 136, 250, 0.01); /* Inner shadow */
+    width: 50%;  /* 50% of the screen width on larger screens */
+    margin: 0 auto;  /* Center the table horizontally */
+    border-collapse: collapse;  /* Optional: for better table appearance */
+}
+
+h1 {
+  text-align:center;
+  padding-top:0.5em;
+}
+
+td {
+  border: 1px solid #0088fa;  /* Royal Blue border */
+  padding: 10px;
+  box-shadow: inset 0 0 8px rgba(0, 136, 250, 0.3),  /* Inner shadow for each cell */
+              0 4px 8px rgba(0, 136, 250, 0.01);
+/* Left align all table data */
+}
+
+td[rowspan] {
+  vertical-align: middle;
+
+}
+
+td.tdjdbmain{
+  font-size: 1.5em; /* You can adjust the value to make it bigger or smaller */
+  font-weight: bold;
+  font-family:"Bahnschrift"
+}
+
+td.small{
+  font-size: 0.75em; /* You can adjust the value to make it bigger or smaller */
+  font-family:"Bahnschrift"
+}
+
+tr.empty{
+    height:40px;
+    colspan: 4;
+}
+
+td.slightlysmall{
+  font-size: 0.8em;
+}
+/* Mobile devices: smaller screens */
+@media (max-width: 768px) {
+    table {
+        width: 90%;  /* 90% of the screen width on mobile */
+    }
+    td {
+        font-size: 12px;  /* Reduce font size by 40% (60% of the original size) */
+    }
+    td.tdjdbmain{
+        font-size: 15px
+    }
+    td.small{
+        font-size: 10px
+    }
+    .navbar {
+        width: 100%;  /* 90% of the screen width on mobile */
+        max-width: 100%;
+        horizontally-align:middle;
+    }
+    tr.empty{
+        height:3px;
+    }
+
+    .navbar-brand, .nav-link {
+        font-size: 9.6px; /* 40% smaller font size on mobile (60% of 16px) */
+    }
+
+    .navbar img {
+        width: 20px;  /* Smaller logo on mobile */
+        height: 20px;
+    }
+}
